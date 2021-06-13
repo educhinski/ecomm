@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HighlightsComponent } from './components/highlights/highlights.component';
+import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HighlightsComponent } from './components/highlights/highlights.componen
     HeaderComponent,
     FooterComponent,
     CarouselComponent,
-    HighlightsComponent
+    HighlightsComponent,
+    ProductsGridComponent
   ],
   imports: [
     BrowserModule,
