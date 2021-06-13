@@ -1,0 +1,65 @@
+nav {
+  position: absolute;
+  background-color: #fff;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--theme-color, orange);
+}
+
+form {
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+input {
+  flex-grow: 1;
+}
+
+form i {
+  position: absolute;
+  padding: 0;
+  left: 0.6rem;
+  top: 0.6rem;
+  min-width: 2.5rem;
+  color: #495057;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--theme-color, orange);
+  border-color: var(--theme-color, orange);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: var(--theme-color, orange);
+  background-color: transparent;
+}
+
+.navbar-nav {
+  flex-basis: 25%;
+}
+
+.navbar-nav i {
+  padding-right: 0.2rem;
+}
+
+.navbar-nav a {
+  color: #3a3a3a;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.cart {
+  white-space: nowrap;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
