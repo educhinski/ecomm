@@ -1,6 +1,16 @@
 .row {
-  /* justify-content: center; */
-  /* margin: auto; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: auto;
+  align-items: stretch;
+}
+
+.col-12 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 32rem;
+  margin: 0.6em;
 }
 
 ul {
@@ -24,23 +34,18 @@ ul li a:hover {
 
 .col-lg-2 {
   background: #fff;
-  padding: 0.5rem 1.3rem;
+  padding: 0 1rem 0;
   /* height: 512px; */
 }
 
-.col-lg-8 {
-  /* height: 700px; */
-  /* background: red; */
-}
-
-.col-lg-2,
-.col-lg-8 {
-  flex-grow: 1 1 512px;
+.appCarousel {
+  background: #777;
+  justify-content: space-evenly;
 }
 
 .categories li {
   font-weight: 500;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .quickLinks h3 {
