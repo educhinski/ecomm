@@ -9,6 +9,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HighlightsComponent } from './components/highlights/highlights.component';
 import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 import { BrandsComponent } from './components/brands/brands.component';
+import { UserComponent } from './components/user/user.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BrandsComponent } from './components/brands/brands.component';
     CarouselComponent,
     HighlightsComponent,
     ProductsGridComponent,
-    BrandsComponent
+    BrandsComponent,
+    UserComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
