@@ -9,6 +9,9 @@
 }
 
 body {
-  padding-top: 6.6rem;
   background-color: #e5e5e5 !important;
+}
+
+.btp {
+  padding-top: 6.6rem;
 }
