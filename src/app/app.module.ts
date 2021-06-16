@@ -11,6 +11,8 @@ import { ProductsGridComponent } from './components/products-grid/products-grid.
 import { BrandsComponent } from './components/brands/brands.component';
 import { UserComponent } from './components/user/user.component';
 import { HomeComponent } from './components/home/home.component';
+import { RegisterComponent } from './components/user/register/register.component';
+import { LoginComponent } from './components/user/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeComponent } from './components/home/home.component';
     ProductsGridComponent,
     BrandsComponent,
     UserComponent,
-    HomeComponent
+    HomeComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
