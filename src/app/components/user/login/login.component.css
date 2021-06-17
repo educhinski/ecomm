@@ -64,6 +64,11 @@
   font-weight: bold;
 }
 
+.first-time a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* strike */
 .strike {
   display: block;

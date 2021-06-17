@@ -64,6 +64,11 @@
   font-weight: bold;
 }
 
+.with-account a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /* strike */
 .strike {
   display: block;

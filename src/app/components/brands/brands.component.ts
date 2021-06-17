@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BrandsComponent implements OnInit {
   brands = [
     { name: 'official stores', color: '#f94229' },
-    { name: 'global', color: '#8480f7' },
-    { name: 'airtime & bills', color: '#67cf3c' },
-    { name: 'food', color: '#f9462a' },
+    { name: 'Retail', color: '#000000' },
+    { name: 'wholesale', color: '#67cf3c' },
+    { name: 'manufacturer', color: '#507ef7' },
   ];
 
   constructor() {}

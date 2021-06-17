@@ -35,10 +35,20 @@
         </ul>
       </div>
       <div class="col-lg-2 col-12 d-flex flex-column pr-0">
-        <button type="button" class="btn btn-primary register my-2">
+        <button
+          type="button"
+          class="btn btn-primary register my-2"
+          (click)="onClick('register')"
+        >
           Register
         </button>
-        <button type="button" class="btn btn-outline login my-2">Login</button>
+        <button
+          type="button"
+          class="btn btn-outline login my-2"
+          (click)="onClick('login')"
+        >
+          Login
+        </button>
       </div>
     </div>
     <div class="row py-4 d-flex justify-content-end">
