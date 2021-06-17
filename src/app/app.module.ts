@@ -28,6 +28,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ChartsModule } from 'ng2-charts';
 import { CardComponent } from './components/admin/card/card.component';
+import { AnnualSalesChartComponent } from './components/admin/charts/annual-sales-chart/annual-sales-chart.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CardComponent } from './components/admin/card/card.component';
     NavComponent,
     OverviewComponent,
     CardComponent,
+    AnnualSalesChartComponent,
   ],
   imports: [
     BrowserModule,

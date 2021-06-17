@@ -42,8 +42,8 @@ export class OverviewComponent {
 
       return {
         columns: 4,
-        miniCard: { cols: 1, rows: 1 },
-        chart: { cols: 2, rows: 2 },
+        miniCard: { cols: 4, rows: 1 },
+        chart: { cols: 4, rows: 2 },
         table: { cols: 4, rows: 4 },
       };
     })

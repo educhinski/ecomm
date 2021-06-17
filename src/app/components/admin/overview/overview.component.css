@@ -19,3 +19,22 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+.col {
+  border: 1px solid #d1d1d1;
+}
+
+.col p {
+  margin-bottom: 0.3em;
+}
+
+.trend-title {
+  font-weight: 500;
+}
+
+.trend-val {
+  font-weight: 700;
+}
+.row button {
+  width: 20%;
+}
