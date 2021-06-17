@@ -1,23 +1,27 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="btn-group d-flex" role="group" aria-label="User Account">
-        <button
-          type="button"
-          class="btn btn-lg login"
-          [routerLink]="['/user/login']"
-        >
-          Login
-        </button>
-        <button
-          type="button"
-          class="btn btn-lg register"
-          [routerLink]="['/user/register']"
-        >
-          Register
-        </button>
+<div class="container btp">
+  <app-header></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="btn-group d-flex" role="group" aria-label="User Account">
+          <button
+            type="button"
+            class="btn btn-lg login"
+            [routerLink]="['/user/login']"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            class="btn btn-lg register"
+            [routerLink]="['/user/register']"
+          >
+            Register
+          </button>
+        </div>
+        <router-outlet></router-outlet>
       </div>
-      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+<app-footer></app-footer>

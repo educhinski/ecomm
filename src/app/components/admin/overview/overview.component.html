@@ -1,0 +1,68 @@
+<!--dash.component.html-->
+<div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="{{ (cardLayout | async)?.columns }}" rowHeight="200px">
+    <!-- Buttons -->
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.miniCard?.cols"
+      [rowspan]="(cardLayout | async)?.miniCard?.rows"
+    >
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <button type="button" class="btn btn-outline-dark btn-lg py-5">
+            <p class="p-0">Sales</p>
+            <p class="p-0">2538</p>
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg py-5">
+            <p class="p-0">New Users</p>
+            <p class="p-0">350345</p>
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg py-5">
+            <p class="p-0">Sellers</p>
+            <p class="p-0">25358</p>
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-lg py-5">
+            <p class="p-0">Pending Issues</p>
+            <p class="p-0">368</p>
+          </button>
+        </div>
+      </div>
+    </mat-grid-tile>
+    <!--Charts-->
+    <mat-grid-tile
+      [colspan]="(cardLayout | async)?.chart?.cols"
+      [rowspan]="(cardLayout | async)?.chart?.rows"
+    >
+      <app-card title="Today's Trends">
+        <div class="chartContainer flex-row">
+          <app-admin-annual-sales-chart></app-admin-annual-sales-chart>
+          <div colspan="1" rowspan="2" class="container ml-5">
+            <div class="row flex-column">
+              <div class="col">
+                <p class="trend-title">Resolved</p>
+                <p class="trend-val">449</p>
+              </div>
+              <div class="col">
+                <p class="trend-title">Received</p>
+                <p class="trend-val">426</p>
+              </div>
+              <div class="col">
+                <p class="trend-title">Average First Response Time</p>
+                <p class="trend-val">33m</p>
+              </div>
+              <div class="col">
+                <p class="trend-title">Average Response Time</p>
+                <p class="trend-val">3h 8m</p>
+              </div>
+              <div class="col">
+                <p class="trend-title">Resolutions</p>
+                <p class="trend-val">94%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </mat-grid-tile>
+    <!-- Tables -->
+  </mat-grid-list>
+</div>
