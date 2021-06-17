@@ -44,25 +44,16 @@ h3 {
   box-shadow: none;
 }
 
-.register {
-  background: var(--theme-color, orange);
-  color: #fff;
-}
-
-.register:hover {
-  background: #fff;
-  color: var(--theme-color, orange);
-}
-
+.register,
 .login {
-  background: #fff;
-  color: var(--theme-color, orange);
-  border-color: var(--theme-color, orange);
-}
-
-.login:hover {
   background: var(--theme-color, orange);
   color: #fff;
+}
+
+.register:hover,
+.login:hover {
+  background: #fff;
+  color: var(--theme-color, orange);
 }
 
 .row:first-of-type {
@@ -75,6 +66,7 @@ i {
 
 i:hover {
   color: var(--theme-color, orange);
+  cursor: pointer;
 }
 
 .social-media i {

@@ -2,36 +2,20 @@
   background-color: var(--theme-color, orange);
 }
 
-.login {
-  color: var(--theme-color, orange);
-  background: #fff;
-}
-
-.login:focus,
-.login:active {
-  color: #fff;
-  background: var(--theme-color, orange);
-}
-
+.login,
 .register {
   color: #fff;
   background: var(--theme-color, orange);
+  border-width: 2px !important;
+  border-radius: 2px;
 }
 
+.login:focus,
 .register:focus,
-.register:active {
-  color: var(--theme-color, orange);
+.login:active,
+.register:active,
+.login:hover,
+.register:hover {
   background: #fff;
+  color: var(--theme-color, orange);
 }
-
-/* .login:focus ~ button,
-.login:active ~ button {
-  color: #fff !important;
-  background: var(--theme-color, orange) !important;
-}
-
-.register:focus ~ button,
-.register:active ~ button {
-  background: #fff !important;
-  color: var(--theme-color, orange) !important;
-} */
