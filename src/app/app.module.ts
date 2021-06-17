@@ -22,6 +22,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { OverviewComponent } from './components/admin/overview/overview.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { ChartsModule } from 'ng2-charts';
+import { CardComponent } from './components/admin/card/card.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +43,9 @@ import { MatListModule } from '@angular/material/list';
     RegisterComponent,
     LoginComponent,
     AdminComponent,
-    NavComponent
+    NavComponent,
+    OverviewComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,9 +56,13 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    ChartsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

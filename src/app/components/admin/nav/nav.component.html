@@ -19,12 +19,12 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Overview</a>
-      <a mat-list-item href="#">Products</a>
-      <a mat-list-item href="#">Customers</a>
-      <a mat-list-item href="#">Sellers</a>
-      <a mat-list-item href="#">Stores</a>
-      <a mat-list-item href="#">Settings</a>
+      <a mat-list-item [routerLink]="['/admin/overview']">Overview</a>
+      <a mat-list-item [routerLink]="['/admin/products']">Products</a>
+      <a mat-list-item [routerLink]="['/admin/customers']">Customers</a>
+      <a mat-list-item [routerLink]="['/admin/sellers']">Sellers</a>
+      <a mat-list-item [routerLink]="['/admin/stores']">Stores</a>
+      <a mat-list-item [routerLink]="['/admin/settings']">Settings</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -41,5 +41,6 @@
       <span>LOGO</span>
     </mat-toolbar>
     <!-- Add Content Here -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
