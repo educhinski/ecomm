@@ -4,6 +4,7 @@ import { AdminComponent } from './components/admin/admin.component';
 import { OverviewComponent } from './components/admin/overview/overview.component';
 
 import { HomeComponent } from './components/home/home.component';
+import { AccountComponent } from './components/user/account/account.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegisterComponent } from './components/user/register/register.component';
 import { UserComponent } from './components/user/user.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
     children: [
       { path: 'register', component: RegisterComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'account', component: AccountComponent },
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },

@@ -1,0 +1,31 @@
+.container {
+  background: #fff;
+}
+
+h4 a {
+  color: inherit;
+  opacity: 0.75;
+}
+
+h4 a:hover {
+  text-decoration: none;
+}
+
+li {
+  background: transparent;
+  border: none;
+  padding-left: 4em;
+}
+
+li:hover {
+  background-color: var(--theme-color, orange);
+  cursor: pointer;
+}
+
+i {
+  float: right;
+  color: #000;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  padding-top: 0.3em;
+}

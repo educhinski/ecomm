@@ -29,6 +29,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { ChartsModule } from 'ng2-charts';
 import { CardComponent } from './components/admin/card/card.component';
 import { AnnualSalesChartComponent } from './components/admin/charts/annual-sales-chart/annual-sales-chart.component';
+import { AccountComponent } from './components/user/account/account.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { AnnualSalesChartComponent } from './components/admin/charts/annual-sale
     OverviewComponent,
     CardComponent,
     AnnualSalesChartComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
