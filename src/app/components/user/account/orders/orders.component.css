@@ -114,12 +114,12 @@ img {
 }
 
 .buttons button {
-  color: var(--theme-color, orange);
-  background: #fff;
+  background: var(--theme-color, orange);
+  color: #fff;
   border: 1px solid var(--theme-color, orange);
 }
 
 .buttons button:hover {
-  background: var(--theme-color, orange);
-  color: #fff;
+  color: var(--theme-color, orange);
+  background: #fff;
 }

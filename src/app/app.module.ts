@@ -31,6 +31,7 @@ import { CardComponent } from './components/admin/card/card.component';
 import { AnnualSalesChartComponent } from './components/admin/charts/annual-sales-chart/annual-sales-chart.component';
 import { AccountComponent } from './components/user/account/account.component';
 import { OrdersComponent } from './components/user/account/orders/orders.component';
+import { CheckoutComponent } from './components/user/account/checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { OrdersComponent } from './components/user/account/orders/orders.compone
     AnnualSalesChartComponent,
     AccountComponent,
     OrdersComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
