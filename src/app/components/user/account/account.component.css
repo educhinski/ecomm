@@ -2,6 +2,21 @@
   background: #fff;
 }
 
+.navbar-brand {
+  color: var(--theme-color, orange);
+}
+
+.navbar-brand h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.navbar-brand p {
+  padding-left: 4rem;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
 h4 a {
   color: inherit;
   opacity: 0.75;

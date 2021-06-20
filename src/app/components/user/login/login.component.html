@@ -1,7 +1,24 @@
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-lg-6 col-md-8 col-sm-12">
-      <form class="form-signin pt-5 pb-3">
+      <!-- Login/Register Buttons -->
+      <div class="btn-group d-flex" role="group" aria-label="User Account">
+        <button
+          type="button"
+          class="btn btn-lg login border top-btn"
+          [routerLink]="['/user/login']"
+        >
+          Login
+        </button>
+        <button
+          type="button"
+          class="btn btn-lg register border top-btn"
+          [routerLink]="['/user/register']"
+        >
+          Register
+        </button>
+      </div>
+      <form class="form-login pt-5 pb-3">
         <h1 class="h3 mb-4 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input
@@ -21,8 +38,9 @@
           required
         />
         <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me" /> Remember me
+          <label class="d-flex align-items-center">
+            <input type="checkbox" value="remember-me" />
+            <span class="pl-2">Remember me</span>
           </label>
         </div>
         <button
