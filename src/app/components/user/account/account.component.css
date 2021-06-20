@@ -20,12 +20,13 @@ li {
 li:hover {
   background-color: var(--theme-color, orange);
   cursor: pointer;
+  border-radius: 0;
 }
 
 i {
   float: right;
   color: #000;
   margin-left: 0.5em;
-  margin-right: 1em;
+  margin-right: 0.5em;
   padding-top: 0.3em;
 }
