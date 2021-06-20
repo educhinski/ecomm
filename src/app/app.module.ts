@@ -30,6 +30,7 @@ import { ChartsModule } from 'ng2-charts';
 import { CardComponent } from './components/admin/card/card.component';
 import { AnnualSalesChartComponent } from './components/admin/charts/annual-sales-chart/annual-sales-chart.component';
 import { AccountComponent } from './components/user/account/account.component';
+import { OrdersComponent } from './components/user/account/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { AccountComponent } from './components/user/account/account.component';
     CardComponent,
     AnnualSalesChartComponent,
     AccountComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
