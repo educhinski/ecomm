@@ -49,3 +49,17 @@ button:hover {
   background: #fff;
   border-color: var(--theme-color, orange);
 }
+
+.need-help {
+  font-size: 1.2rem;
+}
+
+.need-help a {
+  color: var(--theme-color, orange);
+  font-weight: 400;
+}
+
+.need-help a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -6,6 +6,7 @@ import { OverviewComponent } from './components/admin/overview/overview.componen
 import { HomeComponent } from './components/home/home.component';
 import { AccountComponent } from './components/user/account/account.component';
 import { CheckoutComponent } from './components/user/account/checkout/checkout.component';
+import { ConfirmedComponent } from './components/user/account/checkout/confirmed/confirmed.component';
 import { DeliveryComponent } from './components/user/account/checkout/delivery/delivery.component';
 import { PaymentComponent } from './components/user/account/checkout/payment/payment.component';
 import { SummaryComponent } from './components/user/account/checkout/summary/summary.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
           { path: '', redirectTo: 'delivery', pathMatch: 'full' },
         ],
       },
+      { path: 'account/orders/confirmed', component: ConfirmedComponent },
       { path: 'account/orders', component: OrdersComponent },
       { path: 'account', component: AccountComponent },
       { path: '', redirectTo: 'login', pathMatch: 'full' },

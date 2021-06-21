@@ -35,6 +35,7 @@ import { CheckoutComponent } from './components/user/account/checkout/checkout.c
 import { DeliveryComponent } from './components/user/account/checkout/delivery/delivery.component';
 import { PaymentComponent } from './components/user/account/checkout/payment/payment.component';
 import { SummaryComponent } from './components/user/account/checkout/summary/summary.component';
+import { ConfirmedComponent } from './components/user/account/checkout/confirmed/confirmed.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { SummaryComponent } from './components/user/account/checkout/summary/sum
     DeliveryComponent,
     PaymentComponent,
     SummaryComponent,
+    ConfirmedComponent,
   ],
   imports: [
     BrowserModule,

@@ -98,10 +98,15 @@
           <button
             type="button"
             class="btn btn-primary btn-lg btn-default mr-2 px-4"
+            [routerLink]="['/user/account/orders/checkout/payment']"
           >
             Next
           </button>
-          <button type="button" class="btn btn-secondary btn-lg btn-default">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg btn-default"
+            [routerLink]="['/user/account/orders']"
+          >
             Cancel
           </button>
         </div>
