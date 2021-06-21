@@ -1,0 +1,108 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8 col-sm-12 py-4">
+      <!-- user -->
+      <div class="navbar-brand mb-3">
+        <h2 class="m-0">Welcome John Doe</h2>
+        <p class="m-0 py-2">johndoe@gmail.com</p>
+      </div>
+      <!-- Collapsible list -->
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+            <h4 class="panel-title m-0 py-2">
+              <a
+                class="collapsed h5"
+                data-toggle="collapse"
+                href="#collapseListGroup1"
+                aria-expanded="false"
+                aria-controls="collapseListGroup1"
+              >
+                My Account
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseListGroup1"
+            class="panel-collapse collapse show"
+            role="tabpanel"
+            aria-labelledby="collapseListGroupHeading1"
+          >
+            <ul class="list-group">
+              <li
+                class="list-group-item"
+                [routerLink]="['/user/account/orders']"
+              >
+                Orders
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Inbox
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Pending Reviews
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Credit
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Saved Items
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Recently Viewed
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" role="tablist">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+            <h4 class="panel-title m-0 py-2">
+              <a
+                class="collapsed h5"
+                data-toggle="collapse"
+                href="#collapseListGroup2"
+                aria-expanded="false"
+                aria-controls="collapseListGroup2"
+              >
+                Account Settings
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapseListGroup2"
+            class="panel-collapse collapse show"
+            role="tabpanel"
+            aria-labelledby="collapseListGroupHeading2"
+          >
+            <ul class="list-group">
+              <li class="list-group-item">
+                Details
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Address Book
+
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Change Password
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item">
+                Newsletter
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -22,7 +22,7 @@
   transform: translate(-50%);
 }
 
-.row > div {
+.title + .row > div {
   flex-basis: 16%;
   padding: 0.6em;
   margin: 0 auto 3em;
@@ -80,4 +80,46 @@ img {
 
 .watch:hover {
   cursor: pointer;
+}
+
+/* order item */
+.order .col-6 {
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+
+.order img {
+  /* align-self: center; */
+  width: unset;
+  max-height: 250px;
+}
+
+.desc h3,
+.desc p {
+  text-align: left;
+}
+
+.order i {
+  color: var(--theme-color, orange);
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 1.5em;
+}
+
+.order i:hover {
+  cursor: pointer;
+  background: #aaaaaa21;
+}
+
+.buttons button {
+  background: var(--theme-color, orange);
+  color: #fff;
+  border: 1px solid var(--theme-color, orange);
+}
+
+.buttons button:hover {
+  color: var(--theme-color, orange);
+  background: #fff;
 }
