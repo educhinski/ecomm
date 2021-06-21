@@ -2,6 +2,28 @@
   background: #f5f5f5;
 }
 
+.top-btn {
+  background-color: var(--theme-color, orange);
+}
+
+.login,
+.register {
+  color: #fff;
+  background: var(--theme-color, orange);
+  border-width: 2px !important;
+  border-radius: 2px;
+}
+
+.login:focus,
+.register:focus,
+.login:active,
+.register:active,
+.login:hover,
+.register:hover {
+  background: #fff;
+  color: var(--theme-color, orange);
+}
+
 .form-register {
   width: 100%;
   /* max-width: 330px; */
