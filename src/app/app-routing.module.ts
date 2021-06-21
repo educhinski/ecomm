@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './components/admin/admin.component';
 import { OverviewComponent } from './components/admin/overview/overview.component';
+import { CartComponent } from './components/cart/cart.component';
 
 import { HomeComponent } from './components/home/home.component';
 import { AccountComponent } from './components/user/account/account.component';
@@ -46,6 +47,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'overview', pathMatch: 'full' },
     ],
   },
+  { path: 'cart', component: CartComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },

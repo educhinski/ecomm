@@ -1,0 +1,26 @@
+<div class="container btp">
+  <app-header></app-header>
+
+  <div class="container">
+    <div class="row">
+      <div
+        class="col d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="cart-circle">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+        <p class="py-2">Cart is empty!</p>
+        <button
+          type="submit"
+          class="btn btn-outline-dark px-5"
+          [routerLink]="['/home']"
+        >
+          Shop Now
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
