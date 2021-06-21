@@ -32,6 +32,9 @@ import { AnnualSalesChartComponent } from './components/admin/charts/annual-sale
 import { AccountComponent } from './components/user/account/account.component';
 import { OrdersComponent } from './components/user/account/orders/orders.component';
 import { CheckoutComponent } from './components/user/account/checkout/checkout.component';
+import { DeliveryComponent } from './components/user/account/checkout/delivery/delivery.component';
+import { PaymentComponent } from './components/user/account/checkout/payment/payment.component';
+import { SummaryComponent } from './components/user/account/checkout/summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +57,9 @@ import { CheckoutComponent } from './components/user/account/checkout/checkout.c
     AccountComponent,
     OrdersComponent,
     CheckoutComponent,
+    DeliveryComponent,
+    PaymentComponent,
+    SummaryComponent,
   ],
   imports: [
     BrowserModule,

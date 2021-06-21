@@ -1,12 +1,24 @@
 <nav class="navbar navbar-expand navbar-light bg-light justify-content-between">
-  <a class="nav-item nav-link active" href="#">Delivery</a>
-  <a class="nav-item nav-link" href="#">Payment</a>
-  <a class="nav-item nav-link" href="#">Summary</a>
+  <a
+    class="nav-item nav-link"
+    [routerLink]="['/user/account/orders/checkout/delivery']"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Delivery</a
+  >
+  <a
+    class="nav-item nav-link"
+    [routerLink]="['/user/account/orders/checkout/payment']"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Payment</a
+  >
+  <a
+    class="nav-item nav-link"
+    [routerLink]="['/user/account/orders/checkout/summary']"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    >Summary</a
+  >
 </nav>
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>
