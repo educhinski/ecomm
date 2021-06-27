@@ -12,6 +12,21 @@ import { MustMatch } from './helpers/must-match.validator';
 export class SellerRegisterComponent implements OnInit {
   title = '1 out of 3 steps';
   sellerTypes = ['retailer', 'wholesaler', 'manufacturer'];
+  categories = [
+    'gardens & outdoors',
+    'health & body',
+    'home & office',
+    'phones & tablets',
+    'computing',
+    'electronics',
+    'fashion',
+    'gaming',
+    'baby-products',
+    'sporting goods',
+    'supermarket',
+  ];
+  banks = ['A', 'B', 'C', 'D', 'E'];
+  branches = [1, 2, 3, 4, 5];
   registerForm!: FormGroup;
   submitted = false;
 
@@ -26,6 +41,13 @@ export class SellerRegisterComponent implements OnInit {
         confirmEmail: ['', Validators.required],
         password: ['', [Validators.required, Validators.minLength(6)]],
         confirmPassword: ['', Validators.required],
+        shopName: ['', Validators.required],
+        location: ['', Validators.required],
+        kraPin: ['', Validators.required],
+        sellerCategory: ['', Validators.required],
+        bank: ['', Validators.required],
+        bankBranch: ['', Validators.required],
+        account: ['', Validators.required],
       },
       {
         validators: [
