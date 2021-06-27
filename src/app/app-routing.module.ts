@@ -17,6 +17,12 @@ import { RegisterComponent } from './components/user/register/register.component
 import { UserComponent } from './components/user/user.component';
 
 const routes: Routes = [
+  // Lazy load seller module
+  {
+    path: 'seller',
+    loadChildren: () =>
+      import('./seller/seller.module').then((m) => m.SellerModule),
+  },
   {
     path: 'user',
     component: UserComponent,
