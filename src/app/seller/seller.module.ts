@@ -8,7 +8,8 @@ import { SellerRegisterComponent } from './components/seller-register/seller-reg
 
 const routes: Routes = [
   { path: '', component: SellerHomeComponent },
-  { path: 'register', component: SellerRegisterComponent },
+  { path: 'register/:step', component: SellerRegisterComponent },
+  { path: 'register', redirectTo: 'register/1', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -6,7 +6,7 @@
         <h2>{{ title }}</h2>
         <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
           <!-- step 1 -->
-          <div class="step1">
+          <div class="step1" *ngIf="step === 1">
             <h3>Account Details</h3>
             <div class="form-group">
               <div class="form-row">
@@ -23,6 +23,7 @@
                     }"
                   />
                 </div>
+                <!-- seller name error -->
                 <div
                   *ngIf="submitted && f.sellerName.errors"
                   class="invalid-feedback"
@@ -50,6 +51,7 @@
                     </option>
                   </select>
                 </div>
+                <!-- seller type -->
                 <div
                   *ngIf="submitted && f.sellerType.errors"
                   class="invalid-feedback"
@@ -150,7 +152,7 @@
           </div>
 
           <!-- step 2  -->
-          <div class="step-2">
+          <div class="step-2" *ngIf="step === 2">
             <h3>Business Information</h3>
             <!-- shop name -->
             <div class="form-group">
@@ -220,7 +222,7 @@
           </div>
 
           <!-- step 3 -->
-          <div class="step-3">
+          <div class="step-3 mb-4" *ngIf="step === 3">
             <h3>Mode of Payment</h3>
             <!-- Bank -->
             <div class="form-group">
@@ -267,7 +269,7 @@
             <div class="form-group">
               <label class="sr-only">Account Number / Till Number</label>
               <input
-                type="text"
+                type="number"
                 formControlName="account"
                 placeholder="Account Number / Till Number"
                 class="form-control"
@@ -276,12 +278,67 @@
                 }"
               />
             </div>
+            <div *ngIf="submitted && f.account.errors" class="invalid-feedback">
+              <div *ngIf="f.account.errors.required">
+                Account or Till Number is required
+              </div>
+              <div *ngIf="f.account.errors.min">
+                Account / Till Number cannot be negative.
+              </div>
+              <div *ngIf="f.account.errors.minlength">
+                Account / Till Number must be at least 6 characters
+              </div>
+            </div>
           </div>
 
           <!-- submit -->
-          <div class="form-group d-flex justify-content-around">
-            <button type="submit" class="btn btn-danger">Cancel</button>
-            <button type="submit" class="btn btn-primary">Next</button>
+          <!-- submit step 1 -->
+          <div
+            class="form-group d-flex justify-content-around"
+            *ngIf="step === 1"
+          >
+            <button type="submit" class="btn btn-danger" (click)="onCancel()">
+              Cancel
+            </button>
+            <button type="submit" class="btn btn-primary" (click)="onNext()">
+              Next
+            </button>
+          </div>
+          <!-- submit step 2 -->
+          <div
+            class="form-group d-flex justify-content-around"
+            *ngIf="step === 2"
+          >
+            <button type="submit" class="btn btn-danger" (click)="onCancel()">
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              (click)="onPrevious()"
+            >
+              Previous
+            </button>
+            <button type="button" class="btn btn-primary" (click)="onNext()">
+              Next
+            </button>
+          </div>
+          <!-- submit step 3 -->
+          <div
+            class="form-group d-flex justify-content-around"
+            *ngIf="step === 3"
+          >
+            <button type="submit" class="btn btn-danger" (click)="onCancel()">
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              (click)="onPrevious()"
+            >
+              Previous
+            </button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>

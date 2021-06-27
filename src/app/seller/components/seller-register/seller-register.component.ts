@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 // import custom validator to validate that password and confirm password fields match
 import { MustMatch } from './helpers/must-match.validator';
@@ -10,7 +11,6 @@ import { MustMatch } from './helpers/must-match.validator';
   styleUrls: ['./seller-register.component.css'],
 })
 export class SellerRegisterComponent implements OnInit {
-  title = '1 out of 3 steps';
   sellerTypes = ['retailer', 'wholesaler', 'manufacturer'];
   categories = [
     'gardens & outdoors',
@@ -21,7 +21,7 @@ export class SellerRegisterComponent implements OnInit {
     'electronics',
     'fashion',
     'gaming',
-    'baby-products',
+    'baby products',
     'sporting goods',
     'supermarket',
   ];
@@ -29,8 +29,19 @@ export class SellerRegisterComponent implements OnInit {
   branches = [1, 2, 3, 4, 5];
   registerForm!: FormGroup;
   submitted = false;
+  step!: number;
+  title!: string;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {
+    this.route.params.subscribe((params) => {
+      this.step = +params['step'];
+      this.title = `${this.step} out of 3 steps`;
+    });
+  }
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group(
@@ -47,7 +58,10 @@ export class SellerRegisterComponent implements OnInit {
         sellerCategory: ['', Validators.required],
         bank: ['', Validators.required],
         bankBranch: ['', Validators.required],
-        account: ['', Validators.required],
+        account: [
+          '',
+          [Validators.required, Validators.minLength(6), Validators.min(1)],
+        ],
       },
       {
         validators: [
@@ -61,6 +75,25 @@ export class SellerRegisterComponent implements OnInit {
   // convenience getter for easy access to form fields
   get f() {
     return this.registerForm.controls;
+  }
+
+  onCancel() {
+    this.registerForm.reset();
+    this.router.navigate(['/seller']);
+  }
+
+  onNext() {
+    // if (this.registerForm.invalid) {
+    //   return;
+    // }
+
+    this.router.navigate([`../${++this.step}`], { relativeTo: this.route });
+  }
+
+  onPrevious() {
+    this.router.navigate([`../${--this.step}`], {
+      relativeTo: this.route,
+    });
   }
 
   onSubmit() {
